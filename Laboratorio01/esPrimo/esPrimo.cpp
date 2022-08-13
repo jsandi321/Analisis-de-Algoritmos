@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Notacion O = sqrt(n)
 
 bool esPrimo(int n){
 	if(n==2){
