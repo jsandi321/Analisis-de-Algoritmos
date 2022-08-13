@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Notacion O = sqrt(n)
+//Notacion O = n*sqrt(n)
 
 bool esPrimo(int n){
 	if(n==2){
@@ -22,9 +22,9 @@ int main() {
 	int tam;
 	int actual;
 	cin >> tam;
-	for(int i = 0; i < tam; i++){
+	for(int i = 0; i < tam; i++){	//n
 		cin >> actual;
-		if(esPrimo(actual)){
+		if(esPrimo(actual)){		// sqrt(n)
 			cout << "Si" << "\n";
 		}
 		else{
