@@ -3,6 +3,7 @@
 using namespace std;
 
 //Factorizacion Prima
+//Notacion O = O(log(n))
 
 void factorPrima(int n){
 	for(int i = 2; n > 1; i++){
@@ -23,6 +24,5 @@ int main() {
 		cin >> actual;
 		factorPrima(actual);
 	}
-	//factorPrima(25);
 	return 0;
 }
