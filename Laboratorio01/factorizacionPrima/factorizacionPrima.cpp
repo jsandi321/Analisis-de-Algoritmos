@@ -8,8 +8,13 @@ using namespace std;
 void factorPrima(int n){
 	for(int i = 2; n > 1; i++){
 		while(n%i == 0){
-			cout << i <<"x";
 			n = n/i;
+			if(n > 1){
+				cout << i <<"x";
+			}
+			else{
+				cout << i;
+			}
 		}
 	}
 	cout << "\n";
