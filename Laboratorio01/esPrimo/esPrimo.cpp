@@ -3,7 +3,7 @@ using namespace std;
 
 //Notacion O = n*sqrt(n)
 
-bool esPrimo(int n){
+bool esPrimo(int n){		//sqrt(n)
 	if(n==2){
 		return true;
 	}
