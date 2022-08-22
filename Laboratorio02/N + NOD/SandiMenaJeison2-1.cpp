@@ -9,6 +9,7 @@ using namespace std;
 //Calcular NOD
 
 int NOD(int n){
+    //Complejidad: O(n) = sqrt(n)
     int factores = 1;
     for(int i = 1; i < sqrt(n); i++){
         if(n%i == 0){
@@ -23,6 +24,7 @@ int NOD(int n){
     }
     return factores;
 }
+
 //Secuencia
 int main(int argc, char const *argv[])
 {
