@@ -7,19 +7,13 @@ using namespace std;
     Complejidad: 
 */
 //Calcular NOD
-
 int NOD(int n){
     //Complejidad: O(n) = sqrt(n)
-    int factores = 1;
+    int factores = 2;
     for(int i = 1; i < sqrt(n); i++){
         if(n%i == 0){
             factores ++;
             factores ++;
-        }
-        else{
-            if(i*i == n){
-        	factores ++;
-            }
         }
     }
     return factores;
