@@ -7,27 +7,27 @@ using namespace std;
     Complejidad: 
 */
 //Calcular NOD
-int NOD(int n){
+long int NOD(int n){
     //Complejidad: O(n) = sqrt(n)
-    int factores = 0;
+    int divisores = 0;
     for(int i = 1; i <= sqrt(n); i++){
     	if(i*i == n){
-        	factores +=1;
+        	divisores +=1;
         }
         else{
         	if(n%i == 0){
-            factores += 2;
+            divisores += 2;
         	}
         }
     }
-    return factores;
+    return divisores;
 }
 
 //Secuencia
 int main(int argc, char const *argv[])
 {
     /* code */
-    int testing = NOD(100);
+    long int testing = NOD(100);
     cout<<testing;
     return 0;
 }
